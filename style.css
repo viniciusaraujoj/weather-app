@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+body {
+  background: #e2e8f0;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 3rem;
+  display: grid;
+  justify-content: center;
+  gap: 1rem;
+  letter-spacing: 1.5px;
+}
+
+.container {
+  max-width: 400px;
+  padding: 1rem;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #334155;
+}
+
+#form {
+  margin-bottom: 1rem;
+}
+
+#form p {
+  text-align: center;
+  margin-bottom: 0.2rem;
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+#form input {
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  border: 2px solid transparent;
+  outline: none;
+}
+
+#form input:focus {
+  border-color: rgb(196, 196, 255);
+}
+
+.card {
+  background: #fff;
+  display: grid;
+  place-items: center;
+  position: relative;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+.card img {
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
+.icon-container {
+  border: none;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #f8fafc;
+  position: absolute;
+  top: 50%;
+  transform: translateY(30%);
+}
+.card .info {
+  padding: 4rem 2rem 2rem 2rem;
+  display: grid;
+  text-align: center;
+  gap: 1rem;
+}
+
+.card .info h2 {
+  color: #64748b;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.weather-info {
+  color: #64748b;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.temperature {
+  font-size: 3rem;
+  color: #64748b;
+}
+
+.error {
+  text-align: center;
+  color: red;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    padding-top: 1rem;
+  }
+  .icon-container {
+    transform: translateY(20%);
+  }
+}
